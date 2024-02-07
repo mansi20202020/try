@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffcccc;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        #teddy {
+            width: 200px;
+            height: 200px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #ff6666;
+            color: white;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        #yesButton {
+            transition: font-size 0.5s ease;
+        }
+
+        #yesButton:active {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="tenor-gif-embed" data-postid="2017975238515407005" data-share-method="host"
+            data-aspect-ratio="1.30366" data-width="30%"><a
+                href="https://tenor.com/view/i-love-you-love-love-you-cute-gif-2017975238515407005">I Love
+                You Love GIF</a>from <a href="https://tenor.com/search/i+love+you-gifs">I Love You GIFs</a></div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </center>
+
+    <h1>Will you be my Valentine?</h1>
+    <button id="noButton">No</button>
+    <button id="yesButton">Yes</button>
+
+    <script>
+        const noButton = document.getElementById("noButton");
+        const yesButton = document.getElementById("yesButton");
+
+        noButton.addEventListener("click", () => {
+
+            const currentFontSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+
+            yesButton.style.fontSize = (currentFontSize * 1.5) + "px";
+
+        });
+
+
+        yesButton.addEventListener("click", () => {
+
+            window.open('happy-rose-day.html', '_blank');
+
+        });
+    </script>
+</body>
+
+</html>
